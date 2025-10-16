@@ -1,0 +1,61 @@
+{
+  "name": "@sanity/comlink",
+  "version": "3.1.0",
+  "keywords": [
+    "sanity.io",
+    "postmessage"
+  ],
+  "homepage": "https://github.com/sanity-io/comlink/tree/main/packages/comlink#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/comlink/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/comlink.git",
+    "directory": "packages/comlink"
+  },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "pkg build --strict --check --clean",
+    "dev": "pkg build --strict",
+    "prepack": "turbo run build",
+    "test": "vitest --pass-with-no-tests --typecheck"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "dependencies": {
+    "rxjs": "^7.8.2",
+    "uuid": "^11.1.0",
+    "xstate": "^5.21.0"
+  },
+  "devDependencies": {
+    "@sanity/pkg-utils": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
