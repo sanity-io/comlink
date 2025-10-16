@@ -140,19 +140,19 @@ To release a new version:
 Controllers manage one or more Channels that communicate with Nodes in child windows. Each Channel can connect to multiple Nodes across different Window contexts.
 
 ```
-┌─────────────────────────────────┐
-│     Parent Window               │
-│                                 │
-│  ┌──────────┐                  │
-│  │Controller│                  │
-│  └────┬─────┘                  │
-│       │                        │
+┌───────────────────────────────┐
+│     Parent Window             │
+│                               │
+│  ┌──────────┐                 │
+│  │Controller│                 │
+│  └────┬─────┘                 │
+│       │                       │
 │  ┌────▼──────┐  ┌──────────┐  │
 │  │ Channel 1 │  │Channel 2 │  │
 │  └─────┬─────┘  └────┬─────┘  │
-└────────┼─────────────┼─────────┘
+└────────┼─────────────┼────────┘
          │             │
-    ┌────▼────┐   ┌───▼────┐
+    ┌────▼────┐   ┌────▼───┐
     │ iframe  │   │ popup  │
     │  Node   │   │  Node  │
     └─────────┘   └────────┘
