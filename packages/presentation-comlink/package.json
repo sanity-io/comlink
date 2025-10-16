@@ -1,18 +1,14 @@
 {
-  "name": "@sanity/comlink",
-  "version": "3.1.0",
-  "keywords": [
-    "sanity.io",
-    "postmessage"
-  ],
-  "homepage": "https://github.com/sanity-io/comlink/tree/main/packages/comlink#readme",
+  "name": "@sanity/presentation-comlink",
+  "version": "1.0.31",
+  "homepage": "https://github.com/sanity-io/comlink/tree/main/packages/presentation-comlink#readme",
   "bugs": {
     "url": "https://github.com/sanity-io/comlink/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/comlink.git",
-    "directory": "packages/comlink"
+    "directory": "packages/presentation-comlink"
   },
   "license": "MIT",
   "author": "Sanity.io <hello@sanity.io>",
@@ -42,15 +38,19 @@
   },
   "browserslist": "extends @sanity/browserslist-config",
   "dependencies": {
-    "rxjs": "^7.8.2",
-    "uuid": "^11.1.0",
-    "xstate": "^5.21.0"
+    "@sanity/comlink": "workspace:^",
+    "@sanity/visual-editing-types": "^1.1.6"
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",
+    "@sanity/client": "^7.12.0",
     "@sanity/pkg-utils": "catalog:",
+    "eslint": "^8.57.1",
     "typescript": "catalog:",
     "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@sanity/client": "^7.12.0"
   },
   "engines": {
     "node": ">=18"

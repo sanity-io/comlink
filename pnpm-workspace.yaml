@@ -2,16 +2,19 @@ packages:
   - apps/*
   - packages/*
 
+catalog:
+  '@sanity/browserslist-config': 1.0.5
+  '@sanity/pkg-utils': 8.1.20
+  typescript: 5.9.3
+
+linkWorkspacePackages: deep
+
 minimumReleaseAge: 4320
+
 minimumReleaseAgeExclude:
   - '@sanity/pkg-utils'
 
 preferWorkspacePackages: true
-linkWorkspacePackages: deep
-
-catalog:
-  '@sanity/pkg-utils': 8.1.20
-  typescript: 5.9.3
 
 publicHoistPattern:
   - '*prettier*'
