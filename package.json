@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
     "build": "turbo run build --filter='!./apps/*'",
+    "dev": "turbo run dev",
     "format": "prettier --write .",
     "lint": "oxlint --type-aware",
     "release": "changeset publish",
