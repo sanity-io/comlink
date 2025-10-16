@@ -101,13 +101,11 @@ pnpm type-check
 ### Development Workflow
 
 ```bash
-# Watch mode for development
-pnpm dev
-
-# Run playground app
-cd apps/playground
+# Watch mode for development (also runs the playground app)
 pnpm dev
 ```
+
+The playground app is also deployed to Vercel and available at [https://comlink-playground.sanity.dev/](https://comlink-playground.sanity.dev/)
 
 ### Project Structure
 
@@ -125,13 +123,15 @@ pnpm dev
 
 This repository uses [Changesets](https://github.com/changesets/changesets) for version management and publishing.
 
-```bash
-# Create a changeset
-npx changeset
+To release a new version:
 
-# Publish packages
-pnpm release
-```
+1. Create a changeset describing your changes:
+   ```bash
+   pnpm changeset add
+   ```
+2. Open a PR with your changes and the changeset
+3. Once merged, a "Version Packages" PR will be automatically created
+4. Merge the "Version Packages" PR to publish the new version
 
 ## Architecture
 
@@ -183,7 +183,6 @@ See [LICENSE](./LICENSE) for more details.
 
 ## Resources
 
-- [GitHub Issues](https://github.com/sanity-io/comlink/issues)
 - [Sanity.io](https://www.sanity.io)
 - [Sanity Documentation](https://www.sanity.io/docs)
 
