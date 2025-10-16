@@ -36,8 +36,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "dev": "pkg watch --strict",
     "build": "pkg build --strict --check --clean",
+    "dev": "pkg watch --strict",
     "prepack": "turbo run build",
     "test": "vitest --pass-with-no-tests --typecheck"
   },
