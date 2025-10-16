@@ -1,4 +1,4 @@
-import {FunctionComponent, PropsWithChildren} from 'react'
+import {type FunctionComponent, type PropsWithChildren} from 'react'
 
 export const Button: FunctionComponent<
   PropsWithChildren<{

@@ -1,16 +1,23 @@
-import {vitePlugin as remix} from '@remix-run/dev'
+import {dirname, resolve} from 'node:path'
+import {fileURLToPath} from 'node:url'
+
+import tailwindcss from '@tailwindcss/vite'
 import {defineConfig} from 'vite'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import react from '@vitejs/plugin-react'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [
-    remix({
-      future: {
-        v3_fetcherPersist: true,
-        v3_relativeSplatPath: true,
-        v3_throwAbortReason: true,
-      },
-    }),
-    tsconfigPaths(),
+    react({babel: {plugins: [['babel-plugin-react-compiler', {target: '19'}]]}}),
+    tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        frame: resolve(__dirname, 'frame/index.html'),
+      },
+    },
+  },
 })

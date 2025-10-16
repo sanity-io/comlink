@@ -1,5 +1,5 @@
 import {type Controller} from '@sanity/comlink'
-import {FunctionComponent, useEffect, useRef} from 'react'
+import {type FunctionComponent, useEffect, useRef} from 'react'
 
 export const Frame: FunctionComponent<{
   controller: Controller
@@ -21,7 +21,7 @@ export const Frame: FunctionComponent<{
   return (
     <div className="min-h-[20rem] w-1/2 flex-shrink-0 flex-grow p-2">
       <iframe
-        src="/frame"
+        src="/frame/index.html"
         className="m-0 h-full w-full rounded-lg p-0"
         ref={frameRef}
         title={'frame'}

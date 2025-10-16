@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
-  "include": ["app/**/*"],
+  "include": ["app/**/*", "main.tsx", "frame/frame.tsx"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

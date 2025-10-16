@@ -1,4 +1,10 @@
-import {FunctionComponent, PropsWithChildren, startTransition, useEffect, useState} from 'react'
+import {
+  type FunctionComponent,
+  type PropsWithChildren,
+  startTransition,
+  useEffect,
+  useState,
+} from 'react'
 
 export const Card: FunctionComponent<
   PropsWithChildren<{

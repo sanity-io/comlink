@@ -1,12 +1,15 @@
+import {createRoot} from 'react-dom/client'
+
 import {createNode, type Node, type ProtocolMessage, type WithoutResponse} from '@sanity/comlink'
 import {startTransition, useCallback, useEffect, useState} from 'react'
-import {Button} from '../components/Button'
-import {Card} from '../components/Card'
-import {MessageControls} from '../components/MessageControls'
-import {MessageStack} from '../components/MessageStack'
-import {type ControllerMessage, type NodeMessage} from '../types'
+import {Button} from '../app/components/Button'
+import {Card} from '../app/components/Card'
+import {MessageControls} from '../app/components/MessageControls'
+import {MessageStack} from '../app/components/MessageStack'
+import {type ControllerMessage, type NodeMessage} from '../app/types'
+import {Layout} from '../app/layout'
 
-export default function Frame() {
+function App() {
   const [status, setStatus] = useState('idle')
   const [received, setReceived] = useState<
     Array<ProtocolMessage<WithoutResponse<ControllerMessage>>>
@@ -68,3 +71,9 @@ export default function Frame() {
     </div>
   )
 }
+
+createRoot(document).render(
+  <Layout>
+    <App />
+  </Layout>,
+)
