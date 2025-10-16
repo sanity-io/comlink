@@ -234,7 +234,6 @@ export type VisualEditingNodeMsg =
         documentId: string
       }
       response: {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         snapshot: SanityDocument<Record<string, any>> | undefined | void
       }
     }
@@ -242,10 +241,8 @@ export type VisualEditingNodeMsg =
       type: 'visual-editing/mutate'
       data: {
         transactionId: string | undefined
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         mutations: any[]
       }
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       response: any
     }
   | {
@@ -279,9 +276,7 @@ export type VisualEditingNodeMsg =
   | {
       type: 'visual-editing/telemetry-log'
       data: {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         event: any
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         data: any
       }
     }
@@ -316,7 +311,6 @@ export type LoaderControllerMsg =
         perspective: ClientPerspective
         query: string
         params: QueryParams
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         result: any
         resultSourceMap?: ContentSourceMap
         tags?: SyncTag[]

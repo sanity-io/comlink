@@ -153,7 +153,6 @@ export const createRequestMachine = <TSends extends Message>() => {
         ({context}) => context.parentRef,
         ({context, self}) => {
           if (!context.suppressWarnings) {
-            // eslint-disable-next-line no-console
             console.warn(
               `[@sanity/comlink] Received no response to message '${context.type}' on client '${context.from}' (ID: '${context.id}').`,
             )

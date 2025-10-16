@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import {v4 as uuid} from 'uuid'
 import {
   assertEvent,
@@ -525,7 +524,7 @@ export const createConnection = <TSends extends Message, TReceives extends Messa
   }
 
   const onStatus = (handler: (status: Status) => void, filter?: Status) => {
-    const {unsubscribe} = actor.on('status', (event: StatusEmitEvent & {status: Status}) => {
+    const subscription = actor.on('status', (event: StatusEmitEvent & {status: Status}) => {
       if (filter && event.status !== filter) {
         return
       }
@@ -533,7 +532,7 @@ export const createConnection = <TSends extends Message, TReceives extends Messa
       handler(event.status)
     })
 
-    return unsubscribe
+    return () => subscription.unsubscribe()
   }
 
   const setTarget = (target: MessageEventSource) => {

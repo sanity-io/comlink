@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import {bufferCount, concatMap, defer, filter, fromEvent, map, pipe, take} from 'rxjs'
 import {fromEventObservable} from 'xstate'
 import type {ListenInput, ProtocolMessage} from './types'

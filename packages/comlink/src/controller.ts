@@ -75,7 +75,6 @@ interface Channel<
   }>
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {}
 
 /**
@@ -141,7 +140,8 @@ export const createController = (input: {targetOrigin: string}): Controller => {
         unsubscribers.push(connection.on(type, handler))
       })
       channel.internalEventSubscribers.forEach(({type, handler, unsubscribers}) => {
-        unsubscribers.push(connection.actor.on(type, handler).unsubscribe)
+        const subscription = connection.actor.on(type, handler)
+        unsubscribers.push(() => subscription.unsubscribe())
       })
       channel.statusSubscribers.forEach(({handler, unsubscribers}) => {
         unsubscribers.push(
@@ -233,7 +233,8 @@ export const createController = (input: {targetOrigin: string}): Controller => {
       const unsubscribers: Array<() => void> = []
       connections.forEach((connection) => {
         // @ts-expect-error @todo @help
-        unsubscribers.push(connection.actor.on(type, handler).unsubscribe)
+        const subscription = connection.actor.on(type, handler)
+        unsubscribers.push(() => subscription.unsubscribe())
       })
       const subscriber = {type, handler, unsubscribers}
       // @ts-expect-error @todo @help

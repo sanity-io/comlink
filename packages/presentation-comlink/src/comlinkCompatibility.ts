@@ -160,7 +160,6 @@ export {
   type ResponseMessage,
 } from '@sanity/comlink'
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const createCompatibilityActors = <T extends Message>() => ({
   listen: createListenLogic(convertToComlinkEvent),
   requestMachine: createRequestMachine<T>().provide({

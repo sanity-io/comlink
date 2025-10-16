@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import {v4 as uuid} from 'uuid'
 import {
   assertEvent,
@@ -547,7 +546,7 @@ export const createNode = <TSends extends Message, TReceives extends Message>(
     handler: (status: Exclude<Status, 'disconnected'>) => void,
     filter?: Exclude<Status, 'disconnected'>,
   ) => {
-    const {unsubscribe} = actor.on(
+    const subscription = actor.on(
       'status',
       (event: StatusEmitEvent & {status: Exclude<Status, 'disconnected'>}) => {
         cachedStatus = event.status
@@ -564,7 +563,7 @@ export const createNode = <TSends extends Message, TReceives extends Message>(
       handler(cachedStatus)
     }
 
-    return unsubscribe
+    return () => subscription.unsubscribe()
   }
 
   const post = <TType extends TSends['type'], TMessage extends Extract<TSends, {type: TType}>>(
