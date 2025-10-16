@@ -45,12 +45,8 @@
     "@sanity/browserslist-config": "catalog:",
     "@sanity/client": "^7.12.0",
     "@sanity/pkg-utils": "catalog:",
-    "eslint": "^8.57.1",
     "typescript": "catalog:",
     "vitest": "^3.2.4"
-  },
-  "peerDependencies": {
-    "@sanity/client": "^7.12.0"
   },
   "engines": {
     "node": ">=18"
