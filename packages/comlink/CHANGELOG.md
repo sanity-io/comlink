@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0
+
+### Major Changes
+
+- [`23b3b95`](https://github.com/sanity-io/comlink/commit/23b3b956d33c6a2fcf03174f868f2cee0c280ba5) Thanks [@stipsan](https://github.com/stipsan)! - Drop CJS support, lift node.js req from v18 to v20.19 or newer, or v22.12 or newer
+
 ## 3.1.1
 
 ### Patch Changes
