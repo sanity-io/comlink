@@ -12,7 +12,7 @@ linkWorkspacePackages: deep
 minimumReleaseAge: 4320
 
 minimumReleaseAgeExclude:
-  - '@sanity/pkg-utils'
+  - '@sanity/*'
 
 preferWorkspacePackages: true
 
