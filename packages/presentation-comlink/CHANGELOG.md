@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.33
+
+### Patch Changes
+
+- [`3395096`](https://github.com/sanity-io/comlink/commit/33950967f7e4fd5bd30d8ba39806b095879da9ea) Thanks [@stipsan](https://github.com/stipsan)! - Inline `@sanity/client` typings
+
 ## 1.0.32
 
 ### Patch Changes
