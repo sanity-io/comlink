@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import {EMPTY, filter, fromEvent, map, take, takeUntil, type Observable} from 'rxjs'
 import {v4 as uuid} from 'uuid'
 import {

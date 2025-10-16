@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
-      - run: pnpm lint --format github
+      - run: pnpm lint --format github --quiet --report-unused-disable-directives
 
   build:
     runs-on: ubuntu-latest

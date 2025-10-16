@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {"browser": true},
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "error"
+  }
+}
