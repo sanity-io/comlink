@@ -1,0 +1,29 @@
+{
+  "name": "comlink-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --filter='!./apps/*'",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write .",
+    "lint": "oxlint --type-aware",
+    "release": "changeset publish",
+    "test": "turbo run test",
+    "turbo:fix": "turbo daemon clean"
+  },
+  "prettier": "@sanity/prettier-config",
+  "dependencies": {
+    "typescript": "catalog:"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.7",
+    "@sanity/prettier-config": "^2.0.1",
+    "@types/node": "^24.5.2",
+    "oxlint": "^1.16.0",
+    "oxlint-tsgolint": "^0.2.0",
+    "prettier": "^3.6.2",
+    "turbo": "2.5.6"
+  },
+  "packageManager": "pnpm@10.18.2"
+}

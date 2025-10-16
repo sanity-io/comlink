@@ -1,0 +1,17 @@
+packages:
+  - apps/*
+  - packages/*
+
+minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  - '@sanity/pkg-utils'
+
+preferWorkspacePackages: true
+linkWorkspacePackages: deep
+
+catalog:
+  '@sanity/pkg-utils': 8.1.20
+  typescript: 5.9.3
+
+publicHoistPattern:
+  - '*prettier*'
