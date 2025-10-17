@@ -37,7 +37,7 @@
   "browserslist": "extends @sanity/browserslist-config",
   "dependencies": {
     "@sanity/comlink": "workspace:^",
-    "@sanity/visual-editing-types": "^1.1.7"
+    "@sanity/visual-editing-types": "^1.1.8"
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",

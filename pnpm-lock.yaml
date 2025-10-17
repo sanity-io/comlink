@@ -126,8 +126,8 @@ importers:
         specifier: workspace:^
         version: link:../comlink
       '@sanity/visual-editing-types':
-        specifier: ^1.1.7
-        version: 1.1.7(@sanity/client@7.12.0)
+        specifier: ^1.1.8
+        version: 1.1.8(@sanity/client@7.12.0)
     devDependencies:
       '@sanity/browserslist-config':
         specifier: 'catalog:'
@@ -1153,8 +1153,8 @@ packages:
     peerDependencies:
       prettier: ^3.6.2
 
-  '@sanity/visual-editing-types@1.1.7':
-    resolution: {integrity: sha512-6SwLeVk7jba3MLIJHzFMBbWo0gQUc27nmPsfPPlaTX5BSKUSw1gVBtY9DCQ+Oum6Zpa+lyDlPAIeG/O+tDcnxw==}
+  '@sanity/visual-editing-types@1.1.8':
+    resolution: {integrity: sha512-4Hu3J8qDLanymnSapRzKwHlQl6SCsBbkL1o5fSMVbWVHvTk/j2uGLLNTsjASICTqUwSm3fwWlyahzCy2uS/LvQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@sanity/client': ^7.11.2
@@ -3908,7 +3908,7 @@ snapshots:
       prettier: 3.6.2
       prettier-plugin-packagejson: 2.5.19(prettier@3.6.2)
 
-  '@sanity/visual-editing-types@1.1.7(@sanity/client@7.12.0)':
+  '@sanity/visual-editing-types@1.1.8(@sanity/client@7.12.0)':
     dependencies:
       '@sanity/client': 7.12.0
 
