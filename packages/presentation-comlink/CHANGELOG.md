@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- [`23b3b95`](https://github.com/sanity-io/comlink/commit/23b3b956d33c6a2fcf03174f868f2cee0c280ba5) Thanks [@stipsan](https://github.com/stipsan)! - Drop CJS support, lift node.js req from v18 to v20.19 or newer, or v22.12 or newer
+
+### Patch Changes
+
+- [#17](https://github.com/sanity-io/comlink/pull/17) [`65c7d21`](https://github.com/sanity-io/comlink/commit/65c7d215b1a85dbeb5f36da1bf184b9b9b41c325) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): Update dependency @sanity/visual-editing-types to ^1.1.7
+
+- [#21](https://github.com/sanity-io/comlink/pull/21) [`9fafa1c`](https://github.com/sanity-io/comlink/commit/9fafa1ce54e9f7364309ba89fe7c75baa953ff19) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): Update dependency @sanity/visual-editing-types to ^1.1.8
+
+- Updated dependencies [[`23b3b95`](https://github.com/sanity-io/comlink/commit/23b3b956d33c6a2fcf03174f868f2cee0c280ba5)]:
+  - @sanity/comlink@4.0.0
+
 ## 1.0.33
 
 ### Patch Changes
