@@ -4,7 +4,7 @@ packages:
 
 catalog:
   '@sanity/browserslist-config': 1.0.5
-  '@sanity/pkg-utils': 8.1.22
+  '@sanity/pkg-utils': 8.1.23
   typescript: 5.9.3
 
 linkWorkspacePackages: deep
