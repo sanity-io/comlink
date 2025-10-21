@@ -42,7 +42,7 @@
   "browserslist": "extends @sanity/browserslist-config",
   "dependencies": {
     "rxjs": "^7.8.2",
-    "uuid": "^11.1.0",
+    "uuid": "^13.0.0",
     "xstate": "^5.23.0"
   },
   "devDependencies": {
