@@ -127,14 +127,14 @@ importers:
         version: link:../comlink
       '@sanity/visual-editing-types':
         specifier: ^1.1.8
-        version: 1.1.8(@sanity/client@7.12.0)
+        version: 1.1.8(@sanity/client@7.12.1)
     devDependencies:
       '@sanity/browserslist-config':
         specifier: 'catalog:'
         version: 1.0.5
       '@sanity/client':
-        specifier: ^7.12.0
-        version: 7.12.0
+        specifier: ^7.12.1
+        version: 7.12.1
       '@sanity/pkg-utils':
         specifier: 'catalog:'
         version: 8.1.24(@types/babel__core@7.20.5)(@types/node@24.8.1)(babel-plugin-react-compiler@1.0.0)(typescript@5.9.3)
@@ -1130,8 +1130,8 @@ packages:
   '@sanity/browserslist-config@1.0.5':
     resolution: {integrity: sha512-so+/UtCge8t1jq509hH0otbbptRz0zM/Aa0dh5MhMD7HGT6n2igWIL2VWH/9QR9e77Jn3dJsjz23mW1WCxT+sg==}
 
-  '@sanity/client@7.12.0':
-    resolution: {integrity: sha512-RIQ4JXOpLuc3UkUK34xxYA+n9z6m0RCEbsdloKEbS0areaHymM3144IkzeZGFcIokN1YlNenHfnBHNsMjf3TaQ==}
+  '@sanity/client@7.12.1':
+    resolution: {integrity: sha512-AG4vW21+myuoQAWETF+zRtzeokruJfparVUT18DHb81lzabyb+d90+Be5Bo44P8leWDACPrJqmw9ES2KuotWnw==}
     engines: {node: '>=20'}
 
   '@sanity/eventsource@5.0.2':
@@ -3825,7 +3825,7 @@ snapshots:
 
   '@sanity/browserslist-config@1.0.5': {}
 
-  '@sanity/client@7.12.0':
+  '@sanity/client@7.12.1':
     dependencies:
       '@sanity/eventsource': 5.0.2
       get-it: 8.6.10
@@ -3908,9 +3908,9 @@ snapshots:
       prettier: 3.6.2
       prettier-plugin-packagejson: 2.5.19(prettier@3.6.2)
 
-  '@sanity/visual-editing-types@1.1.8(@sanity/client@7.12.0)':
+  '@sanity/visual-editing-types@1.1.8(@sanity/client@7.12.1)':
     dependencies:
-      '@sanity/client': 7.12.0
+      '@sanity/client': 7.12.1
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
