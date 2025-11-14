@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.1
+
+### Patch Changes
+
+- [#12](https://github.com/sanity-io/comlink/pull/12) [`1789742`](https://github.com/sanity-io/comlink/commit/1789742e39679e1e7eb7f6dae7662e18409eed09) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): Update dependency uuid to v13
+
 ## 4.0.0
 
 ### Major Changes
