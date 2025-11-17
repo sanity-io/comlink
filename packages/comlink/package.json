@@ -43,7 +43,7 @@
   "dependencies": {
     "rxjs": "^7.8.2",
     "uuid": "^13.0.0",
-    "xstate": "^5.23.0"
+    "xstate": "^5.24.0"
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",
