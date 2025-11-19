@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`1789742`](https://github.com/sanity-io/comlink/commit/1789742e39679e1e7eb7f6dae7662e18409eed09), [`697d216`](https://github.com/sanity-io/comlink/commit/697d216a0ed66633fd61d8a4cba777ef207b1fb6)]:
+  - @sanity/comlink@4.0.1
+
 ## 2.0.0
 
 ### Major Changes
