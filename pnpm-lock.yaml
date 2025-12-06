@@ -32,7 +32,7 @@ importers:
         version: 2.29.8(@types/node@24.10.1)
       '@sanity/prettier-config':
         specifier: ^2.0.1
-        version: 2.0.1(prettier@3.7.3)
+        version: 2.0.1(prettier@3.7.4)
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
@@ -43,8 +43,8 @@ importers:
         specifier: ^0.7.1
         version: 0.7.1
       prettier:
-        specifier: ^3.6.2
-        version: 3.7.3
+        specifier: ^3.7.4
+        version: 3.7.4
       turbo:
         specifier: 2.6.1
         version: 2.6.1
@@ -2284,8 +2284,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.7.3:
-    resolution: {integrity: sha512-QgODejq9K3OzoBbuyobZlUhznP5SKwPqp+6Q6xw6o8gnhr4O85L2U915iM2IDcfF2NPXVaM9zlo9tdwipnYwzg==}
+  prettier@3.7.4:
+    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3823,7 +3823,7 @@ snapshots:
       mkdirp: 3.0.1
       outdent: 0.8.0
       package-up: 5.0.0
-      prettier: 3.7.3
+      prettier: 3.7.4
       pretty-bytes: 7.1.0
       prompts: 2.4.2
       recast: 0.23.11
@@ -3852,11 +3852,11 @@ snapshots:
       - supports-color
       - vue-tsc
 
-  '@sanity/prettier-config@2.0.1(prettier@3.7.3)':
+  '@sanity/prettier-config@2.0.1(prettier@3.7.4)':
     dependencies:
       '@prettier/plugin-oxc': 0.0.4
-      prettier: 3.7.3
-      prettier-plugin-packagejson: 2.5.19(prettier@3.7.3)
+      prettier: 3.7.4
+      prettier-plugin-packagejson: 2.5.19(prettier@3.7.4)
 
   '@sanity/visual-editing-types@1.1.8(@sanity/client@7.12.1)':
     dependencies:
@@ -4831,16 +4831,16 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-packagejson@2.5.19(prettier@3.7.3):
+  prettier-plugin-packagejson@2.5.19(prettier@3.7.4):
     dependencies:
       sort-package-json: 3.4.0
       synckit: 0.11.11
     optionalDependencies:
-      prettier: 3.7.3
+      prettier: 3.7.4
 
   prettier@2.8.8: {}
 
-  prettier@3.7.3: {}
+  prettier@3.7.4: {}
 
   pretty-bytes@7.1.0: {}
 
