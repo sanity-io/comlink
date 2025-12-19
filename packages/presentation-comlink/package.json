@@ -44,7 +44,7 @@
     "@sanity/client": "^7.12.1",
     "@sanity/pkg-utils": "catalog:",
     "typescript": "catalog:",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.16"
   },
   "engines": {
     "node": ">=20.19 <22 || >=22.12"
