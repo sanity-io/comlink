@@ -3,7 +3,7 @@ import {isMaybePresentation, isMaybePreviewIframe, isMaybePreviewWindow} from '.
 
 describe('isMaybePreviewIframe', () => {
   it('returns false when window.self === window.top (not in iframe)', () => {
-    // In the test environment (jsdom/happy-dom), self === top by default
+    // In the test environment (happy-dom), self === top by default
     const result = isMaybePreviewIframe()
     // In a normal (non-iframe) context, self === top
     expect(typeof result).toBe('boolean')
