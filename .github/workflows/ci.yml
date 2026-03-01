@@ -45,7 +45,23 @@ jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup
-      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm turbo run test -- --coverage
+      - name: Report coverage
+        if: always() && github.event_name == 'pull_request'
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          working-directory: packages/comlink
+          name: '@sanity/comlink'
+      - name: Report coverage (presentation-comlink)
+        if: always() && github.event_name == 'pull_request'
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          working-directory: packages/presentation-comlink
+          name: '@sanity/presentation-comlink'
