@@ -8,6 +8,7 @@ import {
   type ActorRefFrom,
   type AnyActorRef,
 } from 'xstate'
+
 import {MSG_RESPONSE, RESPONSE_TIMEOUT_DEFAULT} from './constants'
 import type {Message, MessageData, MessageType, ProtocolMessage, ResponseMessage} from './types'
 

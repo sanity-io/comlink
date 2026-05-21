@@ -1,4 +1,5 @@
 import {type FunctionComponent, type PropsWithChildren} from 'react'
+
 import type {RenderedMessage} from '../types'
 import {MessageEntry} from './MessageEntry'
 

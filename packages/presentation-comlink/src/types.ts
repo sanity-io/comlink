@@ -29,6 +29,44 @@ export type HistoryUpdate = {
 }
 
 /**
+ * @deprecated - the new major of Sanity Studio will no longer send this event, as better APIs like `loader/query-listen`, are available
+ */
+type DeprecatedHistoryRefreshMutation = {
+  /**
+   * source 'mutation' means a document were mutated and the preview might need to refresh
+   */
+  source: 'mutation'
+  /**
+   * If true then there's either preview-kit or a loader connected on the page
+   * @deprecated – it's up to the application to know wether loaders are enabled or not, and how best to implement a refresh handler that works optimally,
+   *               the next major of Sanity Studio will not set this field
+   */
+  livePreviewEnabled: boolean
+  /**
+   * Select metadata about the document that were mutated
+   * If it's prefixed with `drafts.` then it's a draft document, otherwise it's a published document.
+   */
+  document: {
+    /**
+     * If it's prefixed with `drafts.` then it's a draft document, otherwise it's a published document.
+     */
+    _id: string
+    /**
+     * The document type is frequently used in `revalidateTag` scenarios with Next.js App Router
+     */
+    _type: string
+    /**
+     * The document revision, can be used to dedupe requests, as we always send two due to debouncing and handling Content Lake eventual consistency
+     */
+    _rev: string
+    /**
+     * If the document has a top level slug field named `slug` with the type `slug`, then it'll be included here
+     */
+    slug?: {current?: string | null}
+  }
+}
+
+/**
  * Preview frame history refresh event, emitted by Presentation Tool
  * @public
  */
@@ -45,40 +83,7 @@ export type HistoryRefresh =
        */
       livePreviewEnabled: boolean
     }
-  | {
-      /**
-       * source 'mutation' means a document were mutated and the preview might need to refresh
-       */
-      source: 'mutation'
-      /**
-       * If true then there's either preview-kit or a loader connected on the page
-       * @deprecated – it's up to the application to know wether loaders are enabled or not, and how best to implement a refresh handler that works optimally,
-       *               the next major of Sanity Studio will not set this field
-       */
-      livePreviewEnabled: boolean
-      /**
-       * Select metadata about the document that were mutated
-       * If it's prefixed with `drafts.` then it's a draft document, otherwise it's a published document.
-       */
-      document: {
-        /**
-         * If it's prefixed with `drafts.` then it's a draft document, otherwise it's a published document.
-         */
-        _id: string
-        /**
-         * The document type is frequently used in `revalidateTag` scenarios with Next.js App Router
-         */
-        _type: string
-        /**
-         * The document revision, can be used to dedupe requests, as we always send two due to debouncing and handling Content Lake eventual consistency
-         */
-        _rev: string
-        /**
-         * If the document has a top level slug field named `slug` with the type `slug`, then it'll be included here
-         */
-        slug?: {current?: string | null}
-      }
-    }
+  | DeprecatedHistoryRefreshMutation
 
 /**
  * @public

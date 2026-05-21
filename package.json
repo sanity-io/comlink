@@ -5,25 +5,23 @@
   "scripts": {
     "build": "turbo run build --filter='!./apps/*'",
     "dev": "turbo run dev",
-    "format": "prettier --write .",
+    "format": "oxfmt .",
     "lint": "oxlint --type-aware",
     "release": "changeset publish",
     "test": "turbo run test",
     "turbo:fix": "turbo daemon clean",
     "type-check": "turbo run type-check"
   },
-  "prettier": "@sanity/prettier-config",
   "dependencies": {
     "typescript": "catalog:"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
     "@changesets/cli": "^2.29.8",
-    "@sanity/prettier-config": "^2.0.1",
     "@types/node": "^24.10.1",
+    "oxfmt": "^0.50.0",
     "oxlint": "^1.28.0",
     "oxlint-tsgolint": "^0.7.1",
-    "prettier": "^3.6.2",
     "turbo": "2.6.1"
   },
   "packageManager": "pnpm@10.22.0"

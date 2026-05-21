@@ -1,5 +1,3 @@
-import {createRoot} from 'react-dom/client'
-
 import {
   createController,
   type ChannelInstance,
@@ -8,14 +6,16 @@ import {
   type WithoutResponse,
 } from '@sanity/comlink'
 import {startTransition, useCallback, useEffect, useMemo, useState} from 'react'
+import {createRoot} from 'react-dom/client'
 import {v4 as uuid} from 'uuid'
+
 import {Button} from './app/components/Button'
 import {Card} from './app/components/Card'
 import {Frame} from './app/components/Frame'
 import {MessageControls} from './app/components/MessageControls'
 import {MessageStack} from './app/components/MessageStack'
-import {type ControllerMessage, type NodeMessage} from './app/types'
 import {Layout} from './app/layout'
+import {type ControllerMessage, type NodeMessage} from './app/types'
 
 // export const meta: MetaFunction = () => {
 //   return [{title: 'Comlink Playground'}, {name: 'description', content: ''}]

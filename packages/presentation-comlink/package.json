@@ -5,15 +5,23 @@
   "bugs": {
     "url": "https://github.com/sanity-io/comlink/issues"
   },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/comlink.git",
     "directory": "packages/presentation-comlink"
   },
-  "license": "MIT",
-  "author": "Sanity.io <hello@sanity.io>",
-  "sideEffects": false,
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "source": "./src/index.ts",
@@ -21,20 +29,14 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "pkg build --strict --check --clean",
     "prepack": "turbo run build",
     "test": "vitest --pass-with-no-tests --typecheck"
   },
-  "browserslist": "extends @sanity/browserslist-config",
   "dependencies": {
     "@sanity/comlink": "workspace:^",
     "@sanity/visual-editing-types": "^1.1.8"
@@ -46,10 +48,8 @@
     "typescript": "catalog:",
     "vitest": "^4.0.9"
   },
+  "browserslist": "extends @sanity/browserslist-config",
   "engines": {
     "node": ">=20.19 <22 || >=22.12"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
