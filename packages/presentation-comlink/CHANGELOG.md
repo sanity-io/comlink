@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.2
+
+### Patch Changes
+
+- [`9d7899b`](https://github.com/sanity-io/comlink/commit/9d7899b2628764790b165d3fab24d92c713a8346) Thanks [@stipsan](https://github.com/stipsan)! - Deprecate `history` events with `source: 'mutation'`
+
+- [`7fa1edf`](https://github.com/sanity-io/comlink/commit/7fa1edfeb25477ca5f730f5496610d1fe85444a4) Thanks [@stipsan](https://github.com/stipsan)! - Deprecate the `livePreviewEnabled` property
+
 ## 2.0.1
 
 ### Patch Changes
