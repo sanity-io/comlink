@@ -40,6 +40,8 @@ export type HistoryRefresh =
       source: 'manual'
       /**
        * If true then there's either preview-kit or a loader connected on the page
+       * @deprecated – it's up to the application to know wether loaders are enabled or not, and how best to implement a refresh handler that works optimally,
+       *               the next major of Sanity Studio will not set this field
        */
       livePreviewEnabled: boolean
     }
@@ -50,6 +52,8 @@ export type HistoryRefresh =
       source: 'mutation'
       /**
        * If true then there's either preview-kit or a loader connected on the page
+       * @deprecated – it's up to the application to know wether loaders are enabled or not, and how best to implement a refresh handler that works optimally,
+       *               the next major of Sanity Studio will not set this field
        */
       livePreviewEnabled: boolean
       /**
