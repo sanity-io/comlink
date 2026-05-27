@@ -40,7 +40,7 @@
     "build": "pkg build --strict --check --clean",
     "dev": "pkg watch --strict",
     "prepack": "turbo run build",
-    "test": "vitest --pass-with-no-tests --typecheck"
+    "test": "vitest --pass-with-no-tests --typecheck --reporter=hanging-process"
   },
   "dependencies": {
     "rxjs": "^7.8.2",
@@ -50,8 +50,10 @@
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",
     "@sanity/pkg-utils": "catalog:",
+    "@vitest/coverage-v8": "^4.0.18",
+    "happy-dom": "^20.7.0",
     "typescript": "catalog:",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.18"
   },
   "browserslist": "extends @sanity/browserslist-config",
   "engines": {
