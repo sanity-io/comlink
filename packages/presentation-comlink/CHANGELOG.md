@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0
+
+### Minor Changes
+
+- [`2dd0e68`](https://github.com/sanity-io/comlink/commit/2dd0e686c85c56018d44da046993b83dd5022244) Thanks [@stipsan](https://github.com/stipsan)! - Support signaling that `<VisualEditing>` handles perspective changes without a full page reload
+
 ## 2.0.2
 
 ### Patch Changes
