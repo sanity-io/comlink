@@ -263,7 +263,14 @@ export type VisualEditingNodeMsg =
     }
   | {
       type: 'visual-editing/fetch-perspective'
-      data: undefined
+      data:
+        | undefined
+        | {
+            /**
+             * Specifies if <VisualEditing> has a `onPerspecticeChange` prop, which signals perspective changes are handled and should not trigger full page reload
+             */
+            handlesPerspectiveChange: boolean
+          }
       response: {
         perspective: ClientPerspective
       }
