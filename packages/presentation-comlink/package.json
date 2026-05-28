@@ -46,7 +46,7 @@
     "@sanity/client": "^7.12.1",
     "@sanity/pkg-utils": "catalog:",
     "typescript": "catalog:",
-    "vitest": "^4.0.9"
+    "vitest": "^4.1.7"
   },
   "browserslist": "extends @sanity/browserslist-config",
   "engines": {

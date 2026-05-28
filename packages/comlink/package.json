@@ -51,7 +51,7 @@
     "@sanity/browserslist-config": "catalog:",
     "@sanity/pkg-utils": "catalog:",
     "typescript": "catalog:",
-    "vitest": "^4.0.9"
+    "vitest": "^4.1.7"
   },
   "browserslist": "extends @sanity/browserslist-config",
   "engines": {
