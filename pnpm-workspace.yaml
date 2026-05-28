@@ -27,6 +27,8 @@ minimumReleaseAgeExclude:
   - 'sanity'
   - 'vite'
   - 'vitest'
+  # Renovate security update: uuid@13.0.1
+  - uuid@13.0.1
 
 preferWorkspacePackages: true
 
