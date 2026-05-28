@@ -27,6 +27,8 @@ minimumReleaseAgeExclude:
   - 'sanity'
   - 'vite'
   - 'vitest'
+  # Renovate security update: turbo@2.9.14
+  - turbo@2.9.14
 
 preferWorkspacePackages: true
 
