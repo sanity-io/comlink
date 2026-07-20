@@ -1,0 +1,26 @@
+name: Publish Pull Requests with pkg.pr.new
+
+permissions:
+  pull-requests: write
+
+on:
+  pull_request:
+    types: [opened, synchronize, labeled]
+
+env:
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+
+jobs:
+  publish:
+    if: >
+      github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'trigger: preview')
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/setup
+      - name: Build packages
+        run: pnpm build
+      - name: Publish to pkg.pr.new
+        run: pnpm dlx pkg-pr-new publish --no-template './packages/comlink' './packages/presentation-comlink'
