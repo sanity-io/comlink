@@ -113,6 +113,10 @@ export type VisualEditingControllerMsg =
       type: 'presentation/perspective'
       data: {
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
       }
     }
   /**
@@ -197,6 +201,10 @@ export type VisualEditingNodeMsg =
         projectId?: string
         dataset?: string
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
         documents: ContentSourceMapDocuments
       }
     }
@@ -267,12 +275,20 @@ export type VisualEditingNodeMsg =
         | undefined
         | {
             /**
-             * Specifies if <VisualEditing> has a `onPerspecticeChange` prop, which signals perspective changes are handled and should not trigger full page reload
+             * Specifies if <VisualEditing> has a `onPerspectiveChange` prop, which signals perspective changes are handled and should not trigger full page reload
              */
             handlesPerspectiveChange: boolean
+            /**
+             * Specifies if <VisualEditing> has an `onVariantChange` prop, which signals variant changes are handled and should not trigger a full page reload
+             */
+            handlesVariantChange?: boolean
           }
       response: {
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
       }
     }
   | {
@@ -317,6 +333,10 @@ export type LoaderControllerMsg =
         projectId: string
         dataset: string
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
       }
     }
   | {
@@ -325,6 +345,10 @@ export type LoaderControllerMsg =
         projectId: string
         dataset: string
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
         query: string
         params: QueryParams
         result: any
@@ -343,6 +367,10 @@ export type LoaderNodeMsg =
         projectId: string
         dataset: string
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
         query: string
         params: QueryParams
         /**
@@ -362,6 +390,10 @@ export type LoaderNodeMsg =
         projectId: string
         dataset: string
         perspective: ClientPerspective
+        /**
+         * The selected editing variant (bare variant id). Undefined when no variant is selected.
+         */
+        variant?: string
         documents: ContentSourceMapDocuments
       }
     }
@@ -389,6 +421,10 @@ export type PreviewKitNodeMsg = {
     projectId: string
     dataset: string
     perspective: ClientPerspective
+    /**
+     * The selected editing variant (bare variant id). Undefined when no variant is selected.
+     */
+    variant?: string
     documents: ContentSourceMapDocuments
   }
 }
