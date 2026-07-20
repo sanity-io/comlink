@@ -21,7 +21,7 @@
     "@types/node": "^24.10.1",
     "oxfmt": "^0.50.0",
     "oxlint": "^1.28.0",
-    "oxlint-tsgolint": "^0.7.1",
+    "oxlint-tsgolint": "^0.25.0",
     "turbo": "2.6.1"
   },
   "packageManager": "pnpm@10.22.0"
