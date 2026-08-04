@@ -45,6 +45,7 @@
     "@sanity/browserslist-config": "catalog:",
     "@sanity/client": "^7.26.0",
     "@sanity/pkg-utils": "catalog:",
+    "@sanity/tsconfig": "catalog:",
     "typescript": "catalog:",
     "vitest": "^4.1.10"
   },
