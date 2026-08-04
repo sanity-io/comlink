@@ -23,8 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
       - uses: ./.github/actions/setup
       - run: pnpm build
 
@@ -33,8 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
       - uses: ./.github/actions/setup
       - run: pnpm type-check
 
@@ -43,8 +39,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
       - uses: ./.github/actions/setup
       - run: pnpm build
       - run: pnpm lint --format github --report-unused-disable-directives
@@ -67,8 +61,6 @@ jobs:
           git config --global core.autocrlf false
           git config --global core.eol lf
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
       - uses: ./.github/actions/setup
         with:
           runtime: ${{ matrix.runtime }}

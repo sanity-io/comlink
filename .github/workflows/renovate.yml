@@ -34,8 +34,6 @@ jobs:
           private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
 
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
 
       - name: Generate Renovate runner config
         id: config
