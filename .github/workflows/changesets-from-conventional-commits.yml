@@ -1,13 +1,13 @@
 name: Add changeset from conventional commits
 
 on:
-  pull_request_target: # zizmor: ignore[dangerous-triggers] gated to renovate[bot]/squiggler-legacy[bot]/squiggler-app[bot]; no PR code is checked out or executed in the reusable workflow
+  pull_request:
     types: [opened, synchronize]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 permissions:
-  contents: read # for checkout
+  contents: read
 
 jobs:
   call:
