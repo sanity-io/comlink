@@ -10,7 +10,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@xstate/react": "^6.0.0",
+    "@xstate/react": "^6.1.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "uuid": "^13.0.0"
