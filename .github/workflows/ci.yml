@@ -56,10 +56,10 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node-version: [lts/*]
+        runtime: [node@lts]
         include:
           - os: ubuntu-latest
-            node-version: latest
+            runtime: node@latest
     steps:
       - name: Set git to use LF
         if: matrix.os == 'windows-latest'
@@ -71,5 +71,5 @@ jobs:
           persist-credentials: false
       - uses: ./.github/actions/setup
         with:
-          node-version: ${{ matrix.node-version }}
+          runtime: ${{ matrix.runtime }}
       - run: pnpm test

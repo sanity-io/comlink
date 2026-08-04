@@ -24,8 +24,9 @@ libraries. Standard commands are documented in `README.md` and defined in the ro
 - `pnpm dev` runs `turbo run dev`: it watch-builds the packages AND starts the playground
   Vite dev server at http://localhost:5173/ (routes `/` and `/frame/`). It is a
   persistent process — run it in the background (e.g. tmux), not as a blocking command.
-- `pnpm install` prints an "Ignored build scripts: esbuild" warning. This is harmless —
-  Vite/Vitest still build and run correctly, so no `pnpm approve-builds` step is needed.
+- `pnpm-workspace.yaml` sets `allowBuilds.esbuild: false`. Vite/Vitest ship prebuilt
+  binaries and still work without esbuild's postinstall; do not flip this to `true`
+  unless a dependency actually needs it.
 
 ### Playground hello-world
 Open http://localhost:5173/, click "Add Frame" (status changes to "1 connected"), type a
