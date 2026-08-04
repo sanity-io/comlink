@@ -13,8 +13,8 @@ catalogs:
       specifier: 9.2.3
       version: 9.2.3
     typescript:
-      specifier: 5.9.3
-      version: 5.9.3
+      specifier: 6.0.3
+      version: 6.0.3
 
 importers:
 
@@ -22,7 +22,7 @@ importers:
     dependencies:
       typescript:
         specifier: 'catalog:'
-        version: 5.9.3
+        version: 6.0.3
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.2
@@ -87,7 +87,7 @@ importers:
         version: 4.1.17
       typescript:
         specifier: 'catalog:'
-        version: 5.9.3
+        version: 6.0.3
       vite:
         specifier: ^7.1.9
         version: 7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1)
@@ -109,10 +109,10 @@ importers:
         version: 1.0.5
       '@sanity/pkg-utils':
         specifier: 'catalog:'
-        version: 9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@5.9.3)
+        version: 9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@6.0.3)
       typescript:
         specifier: 'catalog:'
-        version: 5.9.3
+        version: 6.0.3
       vitest:
         specifier: ^4.0.9
         version: 4.0.9(@types/debug@4.1.12)(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1)
@@ -134,10 +134,10 @@ importers:
         version: 7.12.1
       '@sanity/pkg-utils':
         specifier: 'catalog:'
-        version: 9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@5.9.3)
+        version: 9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@6.0.3)
       typescript:
         specifier: 'catalog:'
-        version: 5.9.3
+        version: 6.0.3
       vitest:
         specifier: ^4.0.9
         version: 4.0.9(@types/debug@4.1.12)(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1)
@@ -1298,6 +1298,7 @@ packages:
   '@sanity/pkg-utils@9.2.3':
     resolution: {integrity: sha512-hYkrs8fmqUTe5oXzkm9PHyztfoGKAsKVNCRlWEnPA/YG63780dXwyptbySCuwLHUy4cSX7oasxIqKCaalfD1HQ==}
     engines: {node: '>=20.19 <22 || >=22.12'}
+    deprecated: 'UNSUPPORTED: Versions before v11 are no longer maintained or updated and will not receive fixes. Upgrade to @sanity/pkg-utils v11.'
     hasBin: true
     peerDependencies:
       babel-plugin-react-compiler: '*'
@@ -2691,8 +2692,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3871,7 +3872,7 @@ snapshots:
       event-source-polyfill: 1.0.31
       eventsource: 2.0.2
 
-  '@sanity/pkg-utils@9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@5.9.3)':
+  '@sanity/pkg-utils@9.2.3(@types/babel__core@7.20.5)(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(typescript@6.0.3)':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/parser': 7.28.5
@@ -3909,13 +3910,13 @@ snapshots:
       recast: 0.23.11
       rimraf: 6.1.2
       rolldown: 1.0.0-beta.52
-      rolldown-plugin-dts: 0.18.1(rolldown@1.0.0-beta.52)(typescript@5.9.3)
+      rolldown-plugin-dts: 0.18.1(rolldown@1.0.0-beta.52)(typescript@6.0.3)
       rollup: 4.53.3
       rollup-plugin-esbuild: 6.2.1(esbuild@0.27.0)(rollup@4.53.3)
       rxjs: 7.8.2
       treeify: 1.1.0
       tsx: 4.20.6
-      typescript: 5.9.3
+      typescript: 6.0.3
       uuid: 13.0.0
       zod: 4.1.13
       zod-validation-error: 5.0.0(zod@4.1.13)
@@ -5004,7 +5005,7 @@ snapshots:
       glob: 13.0.0
       package-json-from-dist: 1.0.1
 
-  rolldown-plugin-dts@0.18.1(rolldown@1.0.0-beta.52)(typescript@5.9.3):
+  rolldown-plugin-dts@0.18.1(rolldown@1.0.0-beta.52)(typescript@6.0.3):
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -5017,7 +5018,7 @@ snapshots:
       obug: 2.1.1
       rolldown: 1.0.0-beta.52
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - oxc-resolver
 
@@ -5248,7 +5249,7 @@ snapshots:
 
   typescript@5.8.2: {}
 
-  typescript@5.9.3: {}
+  typescript@6.0.3: {}
 
   ufo@1.6.1: {}
 
