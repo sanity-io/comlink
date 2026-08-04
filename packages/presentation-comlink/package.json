@@ -43,10 +43,11 @@
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",
-    "@sanity/client": "^7.12.1",
+    "@sanity/client": "^7.26.0",
     "@sanity/pkg-utils": "catalog:",
+    "@sanity/tsconfig": "catalog:",
     "typescript": "catalog:",
-    "vitest": "^4.0.9"
+    "vitest": "^4.1.10"
   },
   "browserslist": "extends @sanity/browserslist-config",
   "engines": {

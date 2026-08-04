@@ -16,16 +16,19 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@rolldown/plugin-babel": "^0.2.3",
     "@sanity/comlink": "workspace:*",
-    "@tailwindcss/vite": "^4.1.17",
-    "@tsconfig/vite-react": "^7.0.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tsconfig/vite-react": "^8.1.1",
+    "@types/babel__core": "^7.20.5",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^6.0.5",
     "babel-plugin-react-compiler": "^1.0.0",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.3.3",
     "typescript": "catalog:",
-    "vite": "^7.1.9"
+    "vite": "^8.2.0"
   },
   "engines": {
     "node": ">=22"
