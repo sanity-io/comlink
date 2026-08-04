@@ -7,11 +7,13 @@ libraries. Standard commands are documented in `README.md` and defined in the ro
 `package.json` scripts; prefer those. Notes below cover non-obvious caveats only.
 
 ### Layout
+
 - `packages/comlink` — core library (`@sanity/comlink`).
 - `packages/presentation-comlink` — Sanity-internal helpers (`@sanity/presentation-comlink`).
 - `apps/playground` — Vite + React demo app that exercises the library end to end.
 
 ### Running / testing
+
 - Node 22 and pnpm are already provisioned; dependencies are installed by the startup
   update script (`pnpm install`). No extra system deps, services, secrets, or network
   access are required.
@@ -29,6 +31,7 @@ libraries. Standard commands are documented in `README.md` and defined in the ro
   unless a dependency actually needs it.
 
 ### Playground hello-world
+
 Open http://localhost:5173/, click "Add Frame" (status changes to "1 connected"), type a
 message and click Send — it is delivered to the iframe Node, confirming the comlink
 handshake and message passing work.
