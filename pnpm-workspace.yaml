@@ -2,6 +2,9 @@ packages:
   - apps/*
   - packages/*
 
+allowBuilds:
+  esbuild: false
+
 catalog:
   '@sanity/browserslist-config': 1.0.5
   '@sanity/pkg-utils': 9.2.3
