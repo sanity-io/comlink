@@ -3,8 +3,8 @@ description: 'Sets up Node.js, pnpm, and installs dependencies'
 
 inputs:
   node-version:
-    description: 'Node.js version to use'
-    required: true
+    description: 'Node.js version to use, e.g. lts/* or latest'
+    required: false
     default: lts/*
 
 runs:
