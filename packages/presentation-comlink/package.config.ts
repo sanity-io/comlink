@@ -1,8 +1,7 @@
 import {defineConfig} from '@sanity/pkg-utils'
 
 export default defineConfig({
-  extract: {enabled: false},
+  tsdoc: false,
   tsconfig: 'tsconfig.build.json',
   runtime: 'browser',
-  dts: 'rolldown',
 })
