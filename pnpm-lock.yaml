@@ -1058,12 +1058,12 @@ packages:
       babel-plugin-react-compiler:
         optional: true
 
-  '@sanity/vanilla-extract-integration@0.1.9':
-    resolution: {integrity: sha512-uAdnjBo/4+Xcw0a8ceBSgbyyOUXccq7WVgMM80gDpyIB265ATLpLillfhIdIo56pi6FsEHjIDih/GzCqytjFXQ==}
+  '@sanity/vanilla-extract-integration@0.1.10':
+    resolution: {integrity: sha512-OWMPOnJ1/jVhX/jDkUpFByYbV2R80w/sg5mtmtmo58xhrgH1SWFSZP8Xa6LZfvrsAdc8EGamsRrCBl0i107vnQ==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@sanity/vanilla-extract-rolldown-plugin@0.3.6':
-    resolution: {integrity: sha512-ZZt8xZrYLnl4WW7/kfw0sh59UeoYeleyVSIOldldJpn5A7NRfao88Q4Z7B2au6GzKXSdK0FMIDdKk9PDOrFe4w==}
+  '@sanity/vanilla-extract-rolldown-plugin@0.3.7':
+    resolution: {integrity: sha512-XOcSqiF3m3o/m2B4+q4PEepSsdvtk/XID6aQ+X51XP7xHPHSYISfs+ZoduhM1xq63ZQ/tQ6FElAStQBEiWvdFw==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
       rolldown: ^1.0.0
@@ -1071,8 +1071,8 @@ packages:
       rolldown:
         optional: true
 
-  '@sanity/vanilla-extract-tsdown-plugin@0.2.12':
-    resolution: {integrity: sha512-Hhj+G6t5JeIjeHx16Znkq7xjKmlxC8v0rMmji+t/WHYLttIc7ae/Qp2mQNvMThBwOkyG4zPjNni1SEVk4HUDWw==}
+  '@sanity/vanilla-extract-tsdown-plugin@0.2.13':
+    resolution: {integrity: sha512-p4cGzVemR02VHdbLvZSFkSN0y4WACZywfb1XtpuVJPkPMGZr1fJMuD/Z7MEiAd8ujS/15tkFObiUBjo7Hj69xw==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
       tsdown: ^0.22.5
@@ -3760,7 +3760,7 @@ snapshots:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
       '@sanity/browserslist-config': 1.0.5
-      '@sanity/vanilla-extract-tsdown-plugin': 0.2.12(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))
+      '@sanity/vanilla-extract-tsdown-plugin': 0.2.13(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))
       '@vitejs/plugin-react': 6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
       browserslist: 4.28.7
       lightningcss: 1.33.0
@@ -3778,7 +3778,7 @@ snapshots:
       - supports-color
       - vite
 
-  '@sanity/vanilla-extract-integration@0.1.9':
+  '@sanity/vanilla-extract-integration@0.1.10':
     dependencies:
       '@vanilla-extract/css': 1.21.2
       javascript-stringify: 2.1.0
@@ -3787,18 +3787,18 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@sanity/vanilla-extract-rolldown-plugin@0.3.6(rolldown@1.2.1)':
+  '@sanity/vanilla-extract-rolldown-plugin@0.3.7(rolldown@1.2.1)':
     dependencies:
-      '@sanity/vanilla-extract-integration': 0.1.9
+      '@sanity/vanilla-extract-integration': 0.1.10
       lightningcss: 1.33.0
     optionalDependencies:
       rolldown: 1.2.1
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@sanity/vanilla-extract-tsdown-plugin@0.2.12(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))':
+  '@sanity/vanilla-extract-tsdown-plugin@0.2.13(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))':
     dependencies:
-      '@sanity/vanilla-extract-rolldown-plugin': 0.3.6(rolldown@1.2.1)
+      '@sanity/vanilla-extract-rolldown-plugin': 0.3.7(rolldown@1.2.1)
       tsdown: 0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2)
     transitivePeerDependencies:
       - babel-plugin-macros
