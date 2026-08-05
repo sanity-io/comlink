@@ -13,9 +13,7 @@
     "directory": "packages/presentation-comlink"
   },
   "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
+    "dist"
   ],
   "type": "module",
   "sideEffects": false,
