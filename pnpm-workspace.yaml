@@ -16,6 +16,7 @@ linkWorkspacePackages: deep
 minimumReleaseAge: 4320
 
 minimumReleaseAgeExclude:
+  - '@oxfmt/*'
   - '@oxlint/*'
   - '@oxlint-tsgolint/*'
   - '@rollup/*'
@@ -27,6 +28,7 @@ minimumReleaseAgeExclude:
   - 'groq'
   - 'get-it'
   - 'nanoid'
+  - 'oxfmt'
   - 'oxlint'
   - 'oxlint-tsgolint'
   - 'rollup'
