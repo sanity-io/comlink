@@ -25,6 +25,8 @@ minimumReleaseAgeExclude:
   - '@vite/*'
   - '@vitest/*'
   - 'groq'
+  - 'get-it'
+  - 'nanoid'
   - 'oxlint'
   - 'oxlint-tsgolint'
   - 'rollup'
