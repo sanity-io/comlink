@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.3
+
+### Patch Changes
+
+- [#100](https://github.com/sanity-io/comlink/pull/100) [`ab075a0`](https://github.com/sanity-io/comlink/commit/ab075a09212bd96357ebc80cf507352b3bc95ecf) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update dependency uuid to v14
+
+- [#93](https://github.com/sanity-io/comlink/pull/93) [`5674597`](https://github.com/sanity-io/comlink/commit/5674597094048abb03c0d487e6f168cb4c339841) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update xstate monorepo
+
+- [#104](https://github.com/sanity-io/comlink/pull/104) [`12ed58a`](https://github.com/sanity-io/comlink/commit/12ed58aad3be7682109f60fee25e77b78ab6ae34) Thanks [@stipsan](https://github.com/stipsan)! - Remove explicit `browserslist` config and `@sanity/browserslist-config` dependency. Builds fall back to the same defaults from `@sanity/pkg-utils` with identical output.
+
 ## 4.0.2
 
 ### Patch Changes

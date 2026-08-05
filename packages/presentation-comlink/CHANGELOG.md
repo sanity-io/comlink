@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.2.2
+
+### Patch Changes
+
+- [#91](https://github.com/sanity-io/comlink/pull/91) [`f52da8e`](https://github.com/sanity-io/comlink/commit/f52da8e97ddfc4d1c521f8279e1a139b26416528) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update dependency @sanity/client to ^7.26.2
+
+- [#93](https://github.com/sanity-io/comlink/pull/93) [`5674597`](https://github.com/sanity-io/comlink/commit/5674597094048abb03c0d487e6f168cb4c339841) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update xstate monorepo
+
+- [#99](https://github.com/sanity-io/comlink/pull/99) [`c5186a2`](https://github.com/sanity-io/comlink/commit/c5186a27c4fa9b380a9ea01370a56412cd5b8a0f) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update dependency @sanity/visual-editing-types to v2
+
+- [#104](https://github.com/sanity-io/comlink/pull/104) [`12ed58a`](https://github.com/sanity-io/comlink/commit/12ed58aad3be7682109f60fee25e77b78ab6ae34) Thanks [@stipsan](https://github.com/stipsan)! - Remove explicit `browserslist` config and `@sanity/browserslist-config` dependency. Builds fall back to the same defaults from `@sanity/pkg-utils` with identical output.
+
+- Updated dependencies [[`ab075a0`](https://github.com/sanity-io/comlink/commit/ab075a09212bd96357ebc80cf507352b3bc95ecf), [`5674597`](https://github.com/sanity-io/comlink/commit/5674597094048abb03c0d487e6f168cb4c339841), [`12ed58a`](https://github.com/sanity-io/comlink/commit/12ed58aad3be7682109f60fee25e77b78ab6ae34)]:
+  - @sanity/comlink@4.0.3
+
 ## 2.2.1
 
 ### Patch Changes
