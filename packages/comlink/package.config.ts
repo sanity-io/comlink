@@ -4,4 +4,7 @@ export default defineConfig({
   tsdoc: false,
   tsconfig: 'tsconfig.build.json',
   runtime: 'browser',
+  strictOptions: {
+    noImplicitBrowsersList: 'off',
+  },
 })

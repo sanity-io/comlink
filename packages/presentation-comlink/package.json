@@ -45,13 +45,11 @@
     "xstate": "catalog:"
   },
   "devDependencies": {
-    "@sanity/browserslist-config": "catalog:",
     "@sanity/pkg-utils": "catalog:",
     "@sanity/tsconfig": "catalog:",
     "typescript": "catalog:",
     "vitest": "^4.1.10"
   },
-  "browserslist": "extends @sanity/browserslist-config",
   "engines": {
     "node": ">=20.19 <22 || >=22.12"
   }
