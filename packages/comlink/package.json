@@ -34,7 +34,10 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public"
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
   },
   "scripts": {
     "build": "pkg build --strict --check",
@@ -45,7 +48,7 @@
   "dependencies": {
     "rxjs": "^7.8.2",
     "uuid": "^13.0.2",
-    "xstate": "^5.24.0"
+    "xstate": "catalog:"
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",

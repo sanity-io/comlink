@@ -18,6 +18,9 @@ catalogs:
     typescript:
       specifier: 7.0.2
       version: 7.0.2
+    xstate:
+      specifier: ^5.24.0
+      version: 5.32.5
 
 importers:
 
@@ -113,7 +116,7 @@ importers:
         specifier: ^13.0.2
         version: 13.0.2
       xstate:
-        specifier: ^5.24.0
+        specifier: 'catalog:'
         version: 5.32.5
     devDependencies:
       '@sanity/browserslist-config':
@@ -134,19 +137,22 @@ importers:
 
   packages/presentation-comlink:
     dependencies:
+      '@sanity/client':
+        specifier: ^7.26.0
+        version: 7.26.1
       '@sanity/comlink':
         specifier: workspace:^
         version: link:../comlink
       '@sanity/visual-editing-types':
         specifier: ^1.1.8
         version: 1.1.8(@sanity/client@7.26.1)
+      xstate:
+        specifier: 'catalog:'
+        version: 5.32.5
     devDependencies:
       '@sanity/browserslist-config':
         specifier: 'catalog:'
         version: 1.0.5
-      '@sanity/client':
-        specifier: ^7.26.0
-        version: 7.26.1
       '@sanity/pkg-utils':
         specifier: 'catalog:'
         version: 12.0.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1))

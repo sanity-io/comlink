@@ -30,7 +30,10 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public"
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
   },
   "scripts": {
     "build": "pkg build --strict --check",
@@ -38,12 +41,13 @@
     "test": "vitest --pass-with-no-tests --typecheck"
   },
   "dependencies": {
+    "@sanity/client": "^7.26.0",
     "@sanity/comlink": "workspace:^",
-    "@sanity/visual-editing-types": "^1.1.8"
+    "@sanity/visual-editing-types": "^1.1.8",
+    "xstate": "catalog:"
   },
   "devDependencies": {
     "@sanity/browserslist-config": "catalog:",
-    "@sanity/client": "^7.26.0",
     "@sanity/pkg-utils": "catalog:",
     "@sanity/tsconfig": "catalog:",
     "typescript": "catalog:",
