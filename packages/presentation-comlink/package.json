@@ -41,7 +41,7 @@
   "dependencies": {
     "@sanity/client": "^7.26.2",
     "@sanity/comlink": "workspace:^",
-    "@sanity/visual-editing-types": "^1.1.8",
+    "@sanity/visual-editing-types": "^2.0.12",
     "xstate": "catalog:"
   },
   "devDependencies": {
