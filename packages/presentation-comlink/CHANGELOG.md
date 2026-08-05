@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`9367266`](https://github.com/sanity-io/comlink/commit/93672669eb0a68db64e6f6fb2c7bed3868afde54)]:
+  - @sanity/comlink@4.0.2
+
 ## 2.2.0
 
 ### Minor Changes
