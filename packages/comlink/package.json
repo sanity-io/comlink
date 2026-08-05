@@ -17,9 +17,7 @@
     "directory": "packages/comlink"
   },
   "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
+    "dist"
   ],
   "type": "module",
   "sideEffects": false,
