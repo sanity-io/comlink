@@ -33,7 +33,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pkg build --strict --check --clean",
+    "build": "pkg build --strict --check",
     "prepack": "turbo run build",
     "test": "vitest --pass-with-no-tests --typecheck"
   },

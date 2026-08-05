@@ -37,7 +37,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pkg build --strict --check --clean",
+    "build": "pkg build --strict --check",
     "dev": "pkg watch --strict",
     "prepack": "turbo run build",
     "test": "vitest --pass-with-no-tests --typecheck"
