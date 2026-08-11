@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.3
+
+### Patch Changes
+
+- [#117](https://github.com/sanity-io/comlink/pull/117) [`279f0ac`](https://github.com/sanity-io/comlink/commit/279f0ac8476d40a2f450f1e5c9642eba9df93718) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - fix(deps): update dependency @sanity/visual-editing-types to ^2.0.13
+
 ## 2.2.2
 
 ### Patch Changes
