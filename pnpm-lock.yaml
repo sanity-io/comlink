@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@sanity/pkg-utils':
-      specifier: 12.0.1
-      version: 12.0.1
+      specifier: 12.1.0
+      version: 12.1.0
     '@sanity/tsconfig':
       specifier: 2.2.1
       version: 2.2.1
@@ -69,13 +69,13 @@ importers:
         version: 8.0.1
       '@rolldown/plugin-babel':
         specifier: ^0.2.3
-        version: 0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@sanity/comlink':
         specifier: workspace:*
         version: link:../../packages/comlink
       '@tailwindcss/vite':
         specifier: ^4.3.3
-        version: 4.3.3(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 4.3.3(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@tsconfig/vite-react':
         specifier: ^8.1.1
         version: 8.1.1
@@ -90,7 +90,7 @@ importers:
         version: 19.2.4(@types/react@19.2.18)
       '@vitejs/plugin-react':
         specifier: ^6.0.5
-        version: 6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
@@ -102,7 +102,7 @@ importers:
         version: 7.0.2
       vite:
         specifier: ^8.2.0
-        version: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+        version: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
 
   packages/comlink:
     dependencies:
@@ -118,7 +118,7 @@ importers:
     devDependencies:
       '@sanity/pkg-utils':
         specifier: 'catalog:'
-        version: 12.0.1(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 12.1.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@sanity/tsconfig':
         specifier: 'catalog:'
         version: 2.2.1
@@ -127,7 +127,7 @@ importers:
         version: 7.0.2
       vitest:
         specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
 
   packages/presentation-comlink:
     dependencies:
@@ -146,7 +146,7 @@ importers:
     devDependencies:
       '@sanity/pkg-utils':
         specifier: 'catalog:'
-        version: 12.0.1(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 12.1.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@sanity/tsconfig':
         specifier: 'catalog:'
         version: 2.2.1
@@ -155,7 +155,7 @@ importers:
         version: 7.0.2
       vitest:
         specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+        version: 4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
 
 packages:
 
@@ -1029,41 +1029,47 @@ packages:
   '@sanity/eventsource@5.0.4':
     resolution: {integrity: sha512-NT6XrTJePJd7q1ZdTqB3NsTyNNOe9R2zMkg4Hlkqwb0LL6UmekVamAD46yjSJ+HbRyXAKLl1Rb65xZBdzC1f8Q==}
 
-  '@sanity/parse-package-json@2.2.11':
-    resolution: {integrity: sha512-bGtg6GgNOAb4IbpfIODIMow9P6M/9ado+h/s5WDih/ibSwL7rGp9gvsSaUf4PSegtAFSBp8mHj9epg+E1nMj5Q==}
+  '@sanity/parse-package-json@2.3.0':
+    resolution: {integrity: sha512-OYJIF17SBNfX+1JFF3KEGCBFzNNaD7mupQwwCzSIjgYXVu5TPjqQ2L0DZzUkCSjXPx2H/Fj3FrYqne7gnL284g==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@sanity/pkg-utils@12.0.1':
-    resolution: {integrity: sha512-AHz30+1XohpLUVR9m3aVczE0bsymtiSoncnn7S0ITK1bWL98EATIk8os6NI8QeAG6woxmlitzuOrdTHd7yMFog==}
+  '@sanity/pkg-utils@12.1.0':
+    resolution: {integrity: sha512-gU/s3aYEdnrNJjwxFnP9Hzj7YB0ITGlVkQkVXIvIRi8T68YM8UHAnDlxZr5MMQ4eUF7MxaXbFJcsHzrSMBs8qQ==}
     engines: {node: ^22.18.0 || >=24.11.0}
     hasBin: true
     peerDependencies:
+      '@tsdown/css': '*'
       babel-plugin-react-compiler: '*'
       typescript: 6.x || 7.x
     peerDependenciesMeta:
+      '@tsdown/css':
+        optional: true
       babel-plugin-react-compiler:
         optional: true
 
   '@sanity/tsconfig@2.2.1':
     resolution: {integrity: sha512-1HbvN+W2bWixgXQnvJ9rev5vJaSbN62d+r0Y2pN6XsK6/MP9JfVyF90elBuIrDENTGgVmxB403+gZow45wq+Pg==}
 
-  '@sanity/tsdown-config@0.23.0':
-    resolution: {integrity: sha512-iScBrBqhvZmvVX0O33OAzOhoIKbQTnlBmJd+ttOADsto17y+zY0TSidM+aGpCs85kyQkoWt3nV9jULYZDoTv2g==}
+  '@sanity/tsdown-config@0.24.0':
+    resolution: {integrity: sha512-JoX1/u2s+iY3QVb6nlKyCogXRs5yD/AMEiG4l7zIxBbF8lRK7ZHVY1HFSukqEtBh8KDsRa47j5RUGf65814+xA==}
     engines: {node: ^22.18.0 || >=24.11.0}
     peerDependencies:
+      '@tsdown/css': '*'
       babel-plugin-react-compiler: '*'
-      tsdown: ^0.22.5
+      tsdown: ^0.22.7
       typescript: 6.x || 7.x
     peerDependenciesMeta:
+      '@tsdown/css':
+        optional: true
       babel-plugin-react-compiler:
         optional: true
 
-  '@sanity/vanilla-extract-integration@0.1.10':
-    resolution: {integrity: sha512-OWMPOnJ1/jVhX/jDkUpFByYbV2R80w/sg5mtmtmo58xhrgH1SWFSZP8Xa6LZfvrsAdc8EGamsRrCBl0i107vnQ==}
+  '@sanity/vanilla-extract-integration@0.1.11':
+    resolution: {integrity: sha512-JpVy9gvkL7GocBPRhoXDJvaHNnptUoUOWIwrT7NouDmSat0LsQSxLEPSWlbuVUaU68fjI29Cg8v+MdK/G2bMPQ==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@sanity/vanilla-extract-rolldown-plugin@0.3.7':
-    resolution: {integrity: sha512-XOcSqiF3m3o/m2B4+q4PEepSsdvtk/XID6aQ+X51XP7xHPHSYISfs+ZoduhM1xq63ZQ/tQ6FElAStQBEiWvdFw==}
+  '@sanity/vanilla-extract-rolldown-plugin@0.4.0':
+    resolution: {integrity: sha512-l5ohC+7FIQ7F9//vSi5ByHy0vkO659q+r8t2uQKDhlr70L6Jh3Olxfz1cfVrkjkv3B7/HJz8NNt0VnMIq7wNyg==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
       rolldown: ^1.0.0
@@ -1071,8 +1077,8 @@ packages:
       rolldown:
         optional: true
 
-  '@sanity/vanilla-extract-tsdown-plugin@0.2.13':
-    resolution: {integrity: sha512-p4cGzVemR02VHdbLvZSFkSN0y4WACZywfb1XtpuVJPkPMGZr1fJMuD/Z7MEiAd8ujS/15tkFObiUBjo7Hj69xw==}
+  '@sanity/vanilla-extract-tsdown-plugin@0.3.0':
+    resolution: {integrity: sha512-iTENJhNRZq1Aea0CZTlDOxdvvEEnw7J3I684YOTESxNrK1vqww2Jnkf8k8D4Sna8GDFmTL2U9ALI2aj8oLjWyg==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
       tsdown: ^0.22.5
@@ -2406,8 +2412,8 @@ packages:
   proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
 
-  publint@0.3.22:
-    resolution: {integrity: sha512-6Z/scsr5CA7APdwyF35EY88CqgDj1textWuY788DVTJYPCWVv/Wn9G6KmLnrVRnStgYcahqN4wCDLZGSbQJ69w==}
+  publint@0.3.23:
+    resolution: {integrity: sha512-5MQipUPcB7MWw84zLUkHrg/H/UBtk3LL+A0GngTTBSsiNJLQurMUaSIRG3edlOrRz4UFe0AOKK9TZdIWviV+jQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2680,8 +2686,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.23.4:
-    resolution: {integrity: sha512-ZiUQ8oT/KzN51mJUWPqARYqwFLFJZtGZipRkw1ynHMr9vy3eU77m5yfF3Gzm6meEg/beW+lUu3fHYgskTN2oVQ==}
+  tsx@4.23.5:
+    resolution: {integrity: sha512-rw55FUaqOoI7RvlQwLbhO4nSDApnQ4/CykPuiQ/EPvtrX3WA9Ig55jIt9VvbBJbzJuj12ueRu4PMZ2SxPVbihg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3622,23 +3628,23 @@ snapshots:
   '@rolldown/binding-win32-x64-msvc@1.2.1':
     optional: true
 
-  '@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       picomatch: 4.0.5
       rolldown: 1.2.1
     optionalDependencies:
       '@babel/runtime': 7.29.7
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
 
-  '@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@babel/core': 8.0.1
       picomatch: 4.0.5
       rolldown: 1.2.1
     optionalDependencies:
       '@babel/runtime': 7.29.7
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
 
   '@rolldown/pluginutils@1.0.1': {}
 
@@ -3697,17 +3703,15 @@ snapshots:
       event-source-polyfill: 1.0.31
       eventsource: 2.0.2
 
-  '@sanity/parse-package-json@2.2.11':
+  '@sanity/parse-package-json@2.3.0':
     dependencies:
       zod: 4.4.3
 
-  '@sanity/pkg-utils@12.0.1(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@sanity/pkg-utils@12.1.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
-      '@microsoft/api-extractor': 7.58.12(@types/node@26.1.2)
-      '@microsoft/tsdoc-config': 0.18.1
       '@sanity/browserslist-config': 1.0.5
-      '@sanity/parse-package-json': 2.2.11
-      '@sanity/tsdown-config': 0.23.0(@babel/runtime@7.29.7)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@sanity/parse-package-json': 2.3.0
+      '@sanity/tsdown-config': 0.24.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(tsdown@0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2))(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@typescript/typescript6': 6.0.2
       browserslist: 4.28.7
       browserslist-to-esbuild: 2.1.1(browserslist@4.28.7)
@@ -3718,17 +3722,16 @@ snapshots:
       find-config: 1.0.0
       get-latest-version: 6.0.1
       globby: 16.2.2
-      jsonc-parser: 3.3.1
       mkdirp: 3.0.1
       outdent: 0.8.0
       prettier: 3.9.6
       pretty-bytes: 7.1.1
       prompts: 2.4.2
-      publint: 0.3.22
+      publint: 0.3.23
       rxjs: 7.8.2
       treeify: 1.1.0
-      tsdown: 0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2)
-      tsx: 4.23.4
+      tsdown: 0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2)
+      tsx: 4.23.5
       typescript: 7.0.2
       zod: 4.4.3
       zod-validation-error: 5.0.0(zod@4.4.3)
@@ -3738,7 +3741,6 @@ snapshots:
       - '@arethetypeswrong/core'
       - '@babel/plugin-transform-runtime'
       - '@babel/runtime'
-      - '@tsdown/css'
       - '@tsdown/exe'
       - '@types/node'
       - '@typescript/native-preview'
@@ -3755,30 +3757,35 @@ snapshots:
 
   '@sanity/tsconfig@2.2.1': {}
 
-  '@sanity/tsdown-config@0.23.0(@babel/runtime@7.29.7)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@sanity/tsdown-config@0.24.0(@babel/runtime@7.29.7)(@types/node@26.1.2)(babel-plugin-react-compiler@1.0.0)(rolldown@1.2.1)(supports-color@8.1.1)(tsdown@0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2))(typescript@7.0.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
-      '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@microsoft/api-extractor': 7.58.12(@types/node@26.1.2)
+      '@microsoft/tsdoc-config': 0.18.1
+      '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@sanity/browserslist-config': 1.0.5
-      '@sanity/vanilla-extract-tsdown-plugin': 0.2.13(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))
-      '@vitejs/plugin-react': 6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@sanity/vanilla-extract-tsdown-plugin': 0.3.0(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2))
+      '@typescript/typescript6': 6.0.2
+      '@vitejs/plugin-react': 6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       browserslist: 4.28.7
+      jsonc-parser: 3.3.1
       lightningcss: 1.33.0
       package-manager-detector: 1.8.0
-      publint: 0.3.22
-      tsdown: 0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2)
+      publint: 0.3.23
+      tsdown: 0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2)
       typescript: 7.0.2
     optionalDependencies:
       babel-plugin-react-compiler: 1.0.0
     transitivePeerDependencies:
       - '@babel/plugin-transform-runtime'
       - '@babel/runtime'
+      - '@types/node'
       - babel-plugin-macros
       - rolldown
       - supports-color
       - vite
 
-  '@sanity/vanilla-extract-integration@0.1.10':
+  '@sanity/vanilla-extract-integration@0.1.11':
     dependencies:
       '@vanilla-extract/css': 1.21.2
       javascript-stringify: 2.1.0
@@ -3787,19 +3794,19 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@sanity/vanilla-extract-rolldown-plugin@0.3.7(rolldown@1.2.1)':
+  '@sanity/vanilla-extract-rolldown-plugin@0.4.0(rolldown@1.2.1)':
     dependencies:
-      '@sanity/vanilla-extract-integration': 0.1.10
+      '@sanity/vanilla-extract-integration': 0.1.11
       lightningcss: 1.33.0
     optionalDependencies:
       rolldown: 1.2.1
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@sanity/vanilla-extract-tsdown-plugin@0.2.13(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2))':
+  '@sanity/vanilla-extract-tsdown-plugin@0.3.0(rolldown@1.2.1)(tsdown@0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2))':
     dependencies:
-      '@sanity/vanilla-extract-rolldown-plugin': 0.3.7(rolldown@1.2.1)
-      tsdown: 0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2)
+      '@sanity/vanilla-extract-rolldown-plugin': 0.4.0(rolldown@1.2.1)
+      tsdown: 0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2)
     transitivePeerDependencies:
       - babel-plugin-macros
       - rolldown
@@ -3873,12 +3880,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.3
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.3
 
-  '@tailwindcss/vite@4.3.3(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@tailwindcss/vite@4.3.3(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
       tailwindcss: 4.3.3
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
 
   '@tsconfig/vite-react@8.1.1': {}
 
@@ -4041,20 +4048,20 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vitejs/plugin-react@6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@vitejs/plugin-react@6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
     optionalDependencies:
-      '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       babel-plugin-react-compiler: 1.0.0
 
-  '@vitejs/plugin-react@6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@vitejs/plugin-react@6.0.5(@rolldown/plugin-babel@0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)))(babel-plugin-react-compiler@1.0.0)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
     optionalDependencies:
-      '@rolldown/plugin-babel': 0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@rolldown/plugin-babel': 0.2.3(@babel/core@8.0.1)(@babel/runtime@7.29.7)(rolldown@1.2.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       babel-plugin-react-compiler: 1.0.0
 
   '@vitest/expect@4.1.10':
@@ -4066,13 +4073,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.1
 
-  '@vitest/mocker@4.1.10(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))':
+  '@vitest/mocker@4.1.10(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))':
     dependencies:
       '@vitest/spy': 4.1.10
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
 
   '@vitest/pretty-format@4.1.10':
     dependencies:
@@ -4852,7 +4859,7 @@ snapshots:
 
   proto-list@1.2.4: {}
 
-  publint@0.3.22:
+  publint@0.3.23:
     dependencies:
       '@publint/pack': 0.1.6
       package-manager-detector: 1.8.0
@@ -5052,7 +5059,7 @@ snapshots:
 
   treeify@1.1.0: {}
 
-  tsdown@0.22.14(publint@0.3.22)(tsx@4.23.4)(typescript@7.0.2):
+  tsdown@0.22.14(publint@0.3.23)(tsx@4.23.5)(typescript@7.0.2):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -5070,8 +5077,8 @@ snapshots:
       unconfig-core: 7.5.0
       verkit: 0.3.1
     optionalDependencies:
-      publint: 0.3.22
-      tsx: 4.23.4
+      publint: 0.3.23
+      tsx: 4.23.5
       typescript: 7.0.2
     transitivePeerDependencies:
       - '@typescript/native-preview'
@@ -5081,7 +5088,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsx@4.23.4:
+  tsx@4.23.5:
     dependencies:
       esbuild: 0.28.1
     optionalDependencies:
@@ -5166,7 +5173,7 @@ snapshots:
 
   verkit@0.3.1: {}
 
-  vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4):
+  vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -5178,12 +5185,12 @@ snapshots:
       esbuild: 0.28.1
       fsevents: 2.3.3
       jiti: 2.7.0
-      tsx: 4.23.4
+      tsx: 4.23.5
 
-  vitest@4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)):
+  vitest@4.1.10(@types/node@26.1.2)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)):
     dependencies:
       '@vitest/expect': 4.1.10
-      '@vitest/mocker': 4.1.10(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4))
+      '@vitest/mocker': 4.1.10(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5))
       '@vitest/pretty-format': 4.1.10
       '@vitest/runner': 4.1.10
       '@vitest/snapshot': 4.1.10
@@ -5200,7 +5207,7 @@ snapshots:
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.1
-      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.4)
+      vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.23.5)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 26.1.2
