@@ -37,7 +37,7 @@
     "test": "vitest --pass-with-no-tests --typecheck"
   },
   "dependencies": {
-    "@sanity/client": "^7.26.2",
+    "@sanity/client": "^8.2.0",
     "@sanity/comlink": "workspace:^",
     "@sanity/visual-editing-types": "^2.0.13",
     "xstate": "catalog:"
