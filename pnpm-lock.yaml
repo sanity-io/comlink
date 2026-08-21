@@ -138,8 +138,8 @@ importers:
         specifier: workspace:^
         version: link:../comlink
       '@sanity/visual-editing-types':
-        specifier: ^2.0.13
-        version: 2.0.13(@sanity/client@7.26.2)
+        specifier: ^2.1.1
+        version: 2.1.1(@sanity/client@7.26.2)
       xstate:
         specifier: 'catalog:'
         version: 5.32.5
@@ -1063,11 +1063,11 @@ packages:
     peerDependencies:
       tsdown: ^0.22.5
 
-  '@sanity/visual-editing-types@2.0.13':
-    resolution: {integrity: sha512-GThdnqPCCjapluvq0T6FpH/scpzrDB8VpPygE54ZZRzZ9dci9mkHIf+hCFaOqFYo/af2hcERRsiyQcWXqJjm6w==}
+  '@sanity/visual-editing-types@2.1.1':
+    resolution: {integrity: sha512-t/Aa2HclwUHzNY/CGeQMEVDb4Dc5izI7SwdqwTeSSMc+f0hRgAa2PG3PuBOmpyCta0GGMm7febk4FMWqF+iwaA==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
-      '@sanity/client': ^7.24.0
+      '@sanity/client': ^7.26.2 || ^8.0.0
       '@sanity/types': '*'
     peerDependenciesMeta:
       '@sanity/types':
@@ -3758,7 +3758,7 @@ snapshots:
       - babel-plugin-macros
       - rolldown
 
-  '@sanity/visual-editing-types@2.0.13(@sanity/client@7.26.2)':
+  '@sanity/visual-editing-types@2.1.1(@sanity/client@7.26.2)':
     dependencies:
       '@sanity/client': 7.26.2
 
