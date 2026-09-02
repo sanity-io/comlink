@@ -9,7 +9,7 @@ catalog:
   '@sanity/pkg-utils': 12.1.0
   '@sanity/tsconfig': 2.2.1
   typescript: 7.0.2
-  xstate: ^5.32.5
+  xstate: ^5.32.6
 
 linkWorkspacePackages: deep
 
