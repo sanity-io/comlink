@@ -50,7 +50,7 @@
     "@sanity/pkg-utils": "catalog:",
     "@sanity/tsconfig": "catalog:",
     "typescript": "catalog:",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": ">=20.19 <22 || >=22.12"
