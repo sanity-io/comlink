@@ -6,7 +6,7 @@ allowBuilds:
   esbuild: false
 
 catalog:
-  '@sanity/pkg-utils': 12.1.0
+  '@sanity/pkg-utils': 12.3.4
   '@sanity/tsconfig': 2.2.1
   typescript: 7.0.2
   xstate: ^5.32.5
