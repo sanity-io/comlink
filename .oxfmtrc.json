@@ -7,5 +7,5 @@
   "quoteProps": "consistent",
   "experimentalSortImports": {},
   "sortPackageJson": {"sortScripts": true},
-  "ignorePatterns": ["dist/**", "pnpm-lock.yaml", ".changeset/*.md"]
+  "ignorePatterns": ["dist/**", "pnpm-lock.yaml"]
 }
